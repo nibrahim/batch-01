@@ -19,3 +19,6 @@ def test_biggest_empty():
     ret = biggest([])
     assert ret == None
 
+def test_biggest_positive():
+    ret = biggest([1,2,3,4])
+    assert ret == 4
