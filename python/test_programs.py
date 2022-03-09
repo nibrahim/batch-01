@@ -22,3 +22,7 @@ def test_biggest_empty():
 def test_biggest_positive():
     ret = biggest([1,2,3,4])
     assert ret == 4
+
+def test_biggest_negative():
+    ret = biggest([-1,-2,-3,-4])
+    assert ret == -1

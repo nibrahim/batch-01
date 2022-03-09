@@ -17,11 +17,9 @@ def panagram(s):
     return True
 
 def biggest(l):
-    if not l:
+    if l:
+        return max(l)
+    else:
         return None
-    m = l[0]
-    for i in l:
-        if i > m:
-            m = i
-    return m
+
         
