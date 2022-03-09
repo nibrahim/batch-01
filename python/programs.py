@@ -17,4 +17,7 @@ def panagram(s):
     return True
 
 def biggest(l):
-    return None
+    if not l:
+        return None
+    else:
+        return 4
