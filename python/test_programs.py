@@ -1,4 +1,4 @@
-from programs import freq, panagram
+from programs import freq, panagram, biggest
 
 def test_same():
     ret = freq("aaa")
@@ -15,5 +15,7 @@ def test_panagram_false():
     assert not panagram("the quick brown fox jumped over the lazy dog")
 
 
-
+def test_biggest_empty():
+    ret = biggest([])
+    assert ret == None
 
