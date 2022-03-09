@@ -1,60 +1,122 @@
-Application
+* Old
+** Application
  - Input
  - Processing
  - Output
 
-* State vs Logic
-  - Databases
-    - RDBMS/SQL - Relational DataBase Management Systems/Structured Query Language
-    - 
-  -
+** State vs Logic
+   - Databases
+     - RDBMS/SQL - Relational DataBase Management Systems/Structured Query Language
+     - 
+   -
 
-Artist
-|  ID | Short name | Full name    | Language     |
-|-----+------------+--------------+--------------|
-| 001 | X          | Xavier       | English      |
-| 002 | X          | Xerox        | English      |
-| 003 | xav        | Xavier       | English      |
-| 005 | Satch      | Joe Satriani | Instrumental |
-|     |            |              |              |
-  - ID (Primary Key) - Uniquely identifies a row in the table
-    - NOT NULL
-    - Unique
+ Artist
+ |  ID | Short name | Full name    | Language     |
+ |-----+------------+--------------+--------------|
+ | 001 | X          | Xavier       | English      |
+ | 002 | X          | Xerox        | English      |
+ | 003 | xav        | Xavier       | English      |
+ | 005 | Satch      | Joe Satriani | Instrumental |
+ |     |            |              |              |
+   - ID (Primary Key) - Uniquely identifies a row in the table
+     - NOT NULL
+     - Unique
 
-Song
-|  ID | Artist | Name        | Year | Lyrics |
-|-----+--------+-------------+------+--------|
-| 001 |    003 | Winter song | 2019 | ...    |
-| 002 |    005 | Summer Song | 1998 |        |
-  - ID (Primary Key)
-  - Artist (Foreign Key)
-    - Not null
-    - Should contain something that is also in the Artist.ID field (constraint)
-
-
-* Relational databases
-  - Oracle [Closed Source][Client Server]
-  - PostgreSQL [Open Source][Client Server]
-  - MySQL [Open Source][Client Server]
-  - Sqlite [Open Source][File based]
-
-* SEtting up postgreSQL
-  - sudo apt-get install postgresql-14
-  - sudo /etc/init.d/postgresql start
-  - Create a user
-    - sudo su - # whoami should show "root"
-    - sudo postgres # whoami should show "postgres"
-    - createdb --interactive noufal
-    - Ctrl-D Ctrl-D # whoami should show "noufal"
-    - createdb lyrics # Create a lyrics database
-    - psql lyrics # Connect to lyrics database
+ Song
+ |  ID | Artist | Name        | Year | Lyrics |
+ |-----+--------+-------------+------+--------|
+ | 001 |    003 | Winter song | 2019 | ...    |
+ | 002 |    005 | Summer Song | 1998 |        |
+   - ID (Primary Key)
+   - Artist (Foreign Key)
+     - Not null
+     - Should contain something that is also in the Artist.ID field (constraint)
 
 
+** Relational databases
+   - Oracle [Closed Source][Client Server]
+   - PostgreSQL [Open Source][Client Server]
+   - MySQL [Open Source][Client Server]
+   - Sqlite [Open Source][File based]
 
-| system   | postgres |
-|----------+----------|
-| noufal   | noufal   |
-| postgres | postgres |
-| ..       |          |
-| ..       |          |
-| ..       |          |
+** SEtting up postgreSQL
+   - sudo apt-get install postgresql-14
+   - sudo /etc/init.d/postgresql start
+   - Create a user
+     - sudo su - # whoami should show "root"
+     - sudo postgres # whoami should show "postgres"
+     - createdb --interactive noufal
+     - Ctrl-D Ctrl-D # whoami should show "noufal"
+     - createdb lyrics # Create a lyrics database
+     - psql lyrics # Connect to lyrics database
+
+
+
+ | system   | postgres |
+ |----------+----------|
+ | noufal   | noufal   |
+ | postgres | postgres |
+ | ..       |          |
+ | ..       |          |
+ | ..       |          |
+
+
+* [2022-03-25 Fri] - UNIX
+** Commands
+  - ls - List files in current directory
+  - rmdir - "Remove directory" (deletes a given directory)
+  - mkdir - "Make directory" (create a directory)
+  - cd - "change directory" (go into the specified directory)
+  - pwd - "print working directory" (shows you where you are now)
+  - cat - Display contents of given files
+  - head - Display top n lines (default 10) of a given file
+  - tail - Display bottom n lines (default 10) of a given file
+  - cp - Create a copy of the file
+  - rm - Delete (remove) a file
+  - mv - Rename (move) a file from one name to another
+  - wc - Word count
+  - man - Displays the manual page for a given command
+* [2022-03-02 Wed] - Version control
+** Git commands
+   - init - Initialises the repository
+   - config - Set or read keys and values from config
+   - status - Shows status of repo
+   - add - Stage for commit
+   - commit - Commit all staged files
+   - log - Shows history
+   - blame - Shows history of each line
+   - diff - Shows unstaged changes in repo
+* [2022-03-07 Mon]
+** Python
+  - REPL - Read Eval Print Loop
+  - Types
+  - Functions
+    -  Panagram - "sphinx of black quartz, judge my vow" 
+      "the quick brown fox jumps over the lazy dog"
+  - Control structures
+
+
+* Glossary
+ - directory - The UNIX name for "folder"
+ - home directory - The default directory for a given user
+ - root - The top level directory (/)
+ - Absolute path - The name of a file starting from / all the way down
+   to the actual file name
+ - Relative path - The name of a file relative to the current working directory
+* Notes
+ - Commands can have "options". They are specified using short
+   notation (-s) or long notation (--size)
+ - Commands can have "arguments" (similar to input). These don't have
+   a leading - or --.
+* References
+  - https://www.amazon.in/UNIX-Programming-Environment-Kernighan-Pike/dp/9332550255
+  - https://matt.might.net/articles/basic-unix/ & https://matt.might.net/articles/settling-into-unix/
+  - https://git-scm.com/book/en/v2
+  - https://www.amazon.in/Learn-Python-3-Hard-Way/dp/9352865103
+
+
+
+
+
+
+
