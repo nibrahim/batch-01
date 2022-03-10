@@ -4,4 +4,5 @@ Utilities to calculate automated readability index as per forumula in https://en
 Copyright 2021 - Noufal Ibrahim <noufal@hamon.in>
 """
 
-
+def nchars(s):
+    return 0
