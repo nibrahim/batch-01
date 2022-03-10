@@ -16,5 +16,6 @@ def test_nwords():
     "words is the number of spaces"
     assert ari.nwords(" ") == 1
 
-
+def test_nwords_multiple():
+    assert ari.nwords("words is the number of spaces") == 5
     
