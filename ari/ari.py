@@ -11,3 +11,6 @@ def nchars(s):
             count += 1
     return count
 
+
+def nwords(s):
+    return 1
