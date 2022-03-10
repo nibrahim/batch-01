@@ -8,3 +8,6 @@ def test_nchars_regular():
 
 def test_nchars_special():
     assert ari.nchars("black cat") == 8
+
+def test_nchars_special2():
+    assert ari.nchars("!@#$@#$$#%&^*&*&^") == 0
