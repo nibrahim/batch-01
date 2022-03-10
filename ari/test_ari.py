@@ -25,3 +25,7 @@ def test_nsentences_none():
 
 def test_nsenteces_periods():
     assert ari.nsentences("I am here. I am sitting.") == 2
+
+def test_nsentences_exclamation():
+    assert ari.nsentences("I am here! I am shouting!") == 2
+

@@ -16,4 +16,4 @@ def nwords(s):
     return s.count(" ")
 
 def nsentences(s):
-    return s.count(".")
+    return s.count(".") or s.count("!")
