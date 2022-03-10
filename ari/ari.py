@@ -5,4 +5,9 @@ Copyright 2021 - Noufal Ibrahim <noufal@hamon.in>
 """
 
 def nchars(s):
-    return len(s)
+    count = 0
+    for i in s:
+        if i.isalnum():
+            count += 1
+    return count
+
