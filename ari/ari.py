@@ -5,4 +5,4 @@ Copyright 2021 - Noufal Ibrahim <noufal@hamon.in>
 """
 
 def nchars(s):
-    return 0
+    return len(s)
