@@ -14,3 +14,6 @@ def nchars(s):
 
 def nwords(s):
     return s.count(" ")
+
+def nsentences(s):
+    return 0
