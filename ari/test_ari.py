@@ -5,3 +5,6 @@ def test_nchars_0():
     
 def test_nchars_regular():
     assert ari.nchars("cat") == 3
+
+def test_nchars_special():
+    assert ari.nchars("black cat") == 8
