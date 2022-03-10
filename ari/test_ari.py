@@ -11,3 +11,10 @@ def test_nchars_special():
 
 def test_nchars_special2():
     assert ari.nchars("!@#$@#$$#%&^*&*&^") == 0
+
+def test_nwords():
+    "words is the number of spaces"
+    assert ari.nwords(" ") == 1
+
+
+    
