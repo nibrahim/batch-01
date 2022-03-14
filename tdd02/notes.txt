@@ -1,0 +1,4 @@
+Possible words
+1. No punctuation
+2. No proper nouns (no capital first letters)
+3. Atleast 5 letters
