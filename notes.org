@@ -96,7 +96,8 @@
   - Control structures
 * [2022-03-09 Wed]
   - Test driven development
-    
+* [2022-03-11 Fri]
+  - Use pep 08
 
 * Glossary
  - directory - The UNIX name for "folder"

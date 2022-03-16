@@ -1,6 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 
+def get_songs(artist_url):
+    pass
+
+def get_lyrics(song_url):
+    pass
+
 def get_artists(url):
     ret = []
     r = requests.get(url) # Get the URL
@@ -16,6 +22,8 @@ def crawl():
     artists = get_artists("https://www.songlyrics.com/a/")
     for name, link in artists:
         print (name, "     :      ", link)
+
+    # Create directory and save lyrics
 
 if __name__ == "__main__":
     crawl()
