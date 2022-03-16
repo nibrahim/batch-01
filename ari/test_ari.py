@@ -35,3 +35,14 @@ def test_nsentences_question():
 def test_nsenteces_multiple():
     assert ari.nsentences("I've been here for a long time! Where are you? Why are you not coming here? I've been asking for you.") == 4
 
+def test_ari():
+    assert ari.index(1000, 200, 20) == 8
+
+
+def test_age_level():
+    assert ari.ari("I had seen little of Holmes lately. My marriage had drifted us away from each other. My own complete happiness, and the home-centred interests which rise up around the man who first finds himself master of his own establishment, were sufficient to absorb all my attention.") == ('14-15', 'Ninth Grade')
+
+     
+
+
+
