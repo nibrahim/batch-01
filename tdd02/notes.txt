@@ -5,11 +5,7 @@ Possible words
 
 
 while True:
-      print
-          - masked word
-          - Guesses so far (correct and wrong)
-          - Number of turns left
-
+      print(get_status(...))
       read a letter
 
       check
