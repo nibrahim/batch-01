@@ -98,6 +98,11 @@
   - Test driven development
 * [2022-03-11 Fri]
   - Use pep 08
+* [2022-03-21 Mon]
+  - Code | State
+  - Database - Relational databases (RDBMS)
+  - MySQL/MariaDB, Oracle, PostgreSQL, Sqlite
+  - NoSQL - MongoDB, CouchDB,
 
 * Glossary
  - directory - The UNIX name for "folder"
