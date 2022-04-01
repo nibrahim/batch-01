@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title> List of songs by {{artist}} </title>
+</head>
+<body>
+
+<h1> Songs </h1>
+<p>
+These are the songs for {{artist}}
+</p>
+<p>
+<ol>
+{%for song in songs %}
+<li> {{song[0]}} </li>
+{%endfor%}
+</ol>
+</p>
+<hr/>
+Copyright Lyrics crawler. 2022
+</body>
+</html>
