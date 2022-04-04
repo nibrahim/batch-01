@@ -1,15 +1,18 @@
 {% extends 'base.html' %}
-{%block body%}
+{%block intro%}
+<h2> Artist list </h2>
 
-<h1> Welcome </h1>
+<p class="lead"> Hi there. Welcome to the Lyrics database. </p>
 
-Hi there. Welcome to the Lyrics database. We have the following
-artists
+<p>We have the following artists in our system. Please click on the name
+of the artist whose songs you wish to see</p>
+{%endblock%}
 
+{%block content%}
 <ol>
 {%for aid,aname in artists%}
   <li> <a href="/lyrics/{{aid}}">{{aname}}</a> </li>
 {%endfor%}
 </ol>  
-
 {%endblock%}
+
