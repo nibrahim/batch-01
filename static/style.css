@@ -1,9 +1,14 @@
-div.col-4 {
-    border: 2px solid green;
+div.col-3 {
+    border-right: 1px dotted black;
+    font-size: 75%;
     
     }
 
-div.col-8 {
-    border: 2px solid black;
+/* div.col-8 { */
+/*     border: 2px solid black; */
     
+/*     } */
+
+li.current {
+    background-color: yellow;
     }

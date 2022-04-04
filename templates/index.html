@@ -8,10 +8,15 @@
 of the artist whose songs you wish to see</p>
 {%endblock%}
 
-{%block content%}
+{%block list %}
 <ol>
 {%for aid,aname in artists%}
-  <li> <a href="/lyrics/{{aid}}">{{aname}}</a> </li>
+{%if aid == current%}
+<li class="current"> {{aname}} </li>
+{%else%}
+<li > <a href="/lyrics/{{aid}}">{{aname}}</a> </li>
+{%endif%}
+</li>
 {%endfor%}
 </ol>  
 {%endblock%}

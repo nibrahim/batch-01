@@ -1,14 +1,14 @@
-{% extends 'base.html' %}
-{%block body %}
-<h2> List of Songs </h2>
-<p>
-These are the songs for {{artist}}
-</p>
-<p>
+{% extends 'index.html' %}
+
+{%block details %}
 <ol>
-{%for song in songs %}
-<li> {{song[0]}} </li>
+{%for sid,sname in songs%}
+{%if sid == csong %}
+  <li class="current"> {{sname}} </li>
+{%else%}
+  <li> <a href="{{url_for('get_lyrics', aid=current,
+  sid=sid)}}">{{sname}}</a> </li>
+  {%endif%}
 {%endfor%}
-</ol>
-</p>
+</ol>  
 {%endblock%}
